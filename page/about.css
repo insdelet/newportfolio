@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Ваші стилі тут */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .Logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+text-decoration: none;
+padding: 6px 15px;
+color: #fff;
+border-radius: 20px;
+
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #410c97;
+
+}
+img
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*#text
+{
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+.clock {
+    font-size: 80px;
+    margin-top: 100px;
+}
+
+span {
+    color: #ffffff;
+}
+
+/* Залиште ваші існуючі стилі */
+
+/* Стилі для кнопки мови */
+.language-button {
+    background-color: rgba(0, 0, 0, 0.288); 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Стилі для кнопки мови при наведенні */
+.language-button:hover {
+    background-color: #00000007;
+}
+
+/* Стилі для кнопки мови */
+.language-button {
+    background-color: rgba(0, 0, 0, 0.288); 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Стилі для кнопки мови при наведенні */
+.language-button:hover {
+    background-color: #00000007;
+    color: #000; /* Змініть колір тексту на потрібний */
+}
+
+/* Стилі для кнопки мови */
+.language-button {
+    background-color: rgba(0, 0, 0, 0.288); 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Закруглені кути на постійно */
+    cursor: pointer;
+}
+
+/* Стилі для кнопки мови при наведенні */
+.language-button:hover {
+    background-color: #00000007;
+    color: #000; /* Змініть колір тексту на потрібний */
+    border-radius: 20px; /* Закруглені кути на постійно */
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Стилі для затемнення тексту */
+.about-section {
+    background-image: url('background.jpg'); /* Фон, який залишається незмінним */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px; /* Встановіть потрібний відступ для затемнення */
+    position: relative;
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.3); /* Затемнення з прозорістю 30% */
+    z-index: -1;
+}
+
+.about-content {
+    z-index: 1; /* Розмістіть текст над затемненням */
+    color: white; /* Колір тексту */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #28223F;
+	font-family: Montserrat, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+}
+h3{
+	margin: 10px 0;
+}
+h6{
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+p{
+	font-size: 14px;
+	line-height: 21px;
+}
+.card-container{
+	background-color: #231E39;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+    margin-bottom: 20px;
+}
+.card-container .pro{
+	color: #231E39;
+	background-color: #FEBB0B;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 7px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+.card-container .round{
+	border: 1px solid #03BFCB;
+	border-radius: 50%;
+	padding: 7px;
+}
+button.primary{
+	background-color: #03BFCB;
+	border: 1px solid #03BFCB;
+	border-radius: 3px;
+	color: #231E39;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+button.primary:hover{
+	background-color: transparent;
+	color: #02899C;
+}
+.skills{
+	background-color: #1F1A36;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+}
+.skills ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.skills ul li{
+	border: 1px solid #2D2747;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+  transition: 0.4s;
+}
+.skills ul li:hover{
+  background-color: #03BFCB;
+  border: 1px solid #03BFCB;
+  border-radius: 3px;
+  color: #231E39;
+  cursor: pointer;
+}
+.container {
+    background-color: #231E39;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    color: #B3B8CD;
+    padding-top: 30px;
+    position: relative;
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.left-container {
+    margin-right: 20px; /* Додаємо відстань праворуч */
+}
+
+.right-container {
+    margin-left: 20px; /* Додаємо відстань ліворуч */
+}
+
+#text {
+    text-align: center;
+    font-size: 24px; /* Змініть розмір шрифту за потребою */
+    color: rgb(240, 230, 230); /* Змініть колір тексту за потребою */
+    margin-bottom: -700px; /* Додайте відстань вниз, щоб відокремити від контейнерів */
+}
