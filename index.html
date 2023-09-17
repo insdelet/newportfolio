@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portolio | TAKTAK STUDIO</title>
+    <style>
+        
+        body {
+            background-image: url('background.jpb.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        footer {
+            background-color: rgba(0, 0, 0, 0.7); 
+            color: white; 
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="Logo">TAK TAK STUDIO</a>
+        <ul>
+<li><a href="#" class="active" data-translate="home">Home</a></li>
+            <li><a href="page/about.html" data-translate="about">About</a></li>
+            <li><a href="page/work.html" data-translate="work">Work</a></li>
+            <li><a href="#" data-translate="buy">Buy</a></li>
+            <div class="language-dropdown" onmouseover="showLanguageOptions()" onmouseout="hideLanguageOptions()">
+                <button class="language-button" id="language-selector">Select Language</button>
+                <ul id="language-options">
+                    <li><button class="language-button" onclick="toggleLanguage('en')">EN</button></li>
+                    <li><button class="language-button" onclick="toggleLanguage('ua')">UA</button></li>
+                </ul>
+            </div>                              
+        </ul>
+    </header>
+    <section>
+        <div class="clock">
+            <span id="hours">00</span>
+            <span class="colon">:</span>
+            <span id="minutes">00</span>
+            <span class="colon">:</span>
+            <span id="seconds">00</span>
+        </div>
+        <script src="script.js"></script>
+    </section>
+
+    <footer>
+        &copy; 2023 TAK TAK STUDIO. All Rights Reserved.
+    </footer>
+</body>
+</html>
